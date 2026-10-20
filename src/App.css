@@ -1,0 +1,92 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fdf6ec;
+}
+
+.header {
+  background-color: #e67e22;
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+.header__titulo {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.galeria {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.my-card {
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.my-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.my-card__imagen {
+  height: 220px;
+  overflow: hidden;
+}
+
+.my-card__imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.my-card__cuerpo {
+  text-align: center;
+  padding: 1.25rem;
+}
+
+.my-card__nombre {
+  margin: 0.75rem 0 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.my-card__descripcion {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+.tags {
+  font-size: 0.8rem;
+  padding: 0.4em 0.9em;
+  border-radius: 2rem;
+  font-weight: 600;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 1rem;
+}
+
+.footer__texto {
+  margin: 0;
+  font-size: 0.95rem;
+}
